@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main() {
+int main3() {
 	int x1;
 	cin >> x1;
 	int x2;

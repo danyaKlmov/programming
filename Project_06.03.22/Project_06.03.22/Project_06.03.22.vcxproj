@@ -141,6 +141,8 @@
   <ItemGroup>
     <ClCompile Include="begin 16.cpp" />
     <ClCompile Include="begin1.cpp" />
+    <ClCompile Include="begin19.cpp" />
+    <ClCompile Include="begin39.cpp" />
     <ClCompile Include="begin9.cpp" />
     <ClCompile Include="main.cpp шпаргалка.cpp" />
   </ItemGroup>
