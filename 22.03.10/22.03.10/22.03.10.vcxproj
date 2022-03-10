@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="boolean10.cpp" />
+    <ClCompile Include="boolean20.cpp" />
     <ClCompile Include="boolean3.cpp" />
     <ClCompile Include="boolean9.cpp" />
     <ClCompile Include="integer1.cpp" />
