@@ -144,6 +144,7 @@
     <ClCompile Include="if18.cpp" />
     <ClCompile Include="if2.cpp" />
     <ClCompile Include="if22.cpp" />
+    <ClCompile Include="if26.cpp" />
     <ClCompile Include="if4.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
