@@ -147,6 +147,7 @@
     <ClCompile Include="boolean9.cpp" />
     <ClCompile Include="integer1.cpp" />
     <ClCompile Include="integer11.cpp" />
+    <ClCompile Include="integer2.cpp" />
     <ClCompile Include="integer29.cpp" />
     <ClCompile Include="integer6.cpp" />
   </ItemGroup>
