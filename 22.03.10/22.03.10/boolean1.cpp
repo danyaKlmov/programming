@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main() {
+int main16() {
     int a;
     cin >> a;
     bool b = a > 0;
