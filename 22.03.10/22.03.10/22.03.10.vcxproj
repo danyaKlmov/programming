@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="boolean1.cpp" />
     <ClCompile Include="boolean10.cpp" />
     <ClCompile Include="boolean20.cpp" />
     <ClCompile Include="boolean24.cpp" />
