@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-int main() {
+int main3() {
 	int a, b, c, min;
 	cin >> a >> b >> c;
 	min = a;
