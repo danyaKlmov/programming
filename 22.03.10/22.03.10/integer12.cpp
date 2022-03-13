@@ -3,12 +3,13 @@
 
 using namespace std;
 
-int main12() {
+int main() {
 	int a;
 	cin >> a;
-	int d0 = a % 10;
+	int d0 = a / 100;
+	int d1 = a % 10;
 	int d2 = (a / 10) % 10;
-	cout << d0 << ' ' << d2 ;
+	cout << d1 << ' ' << d2 << ' ' << d0;
 	return 0;
 
 }
