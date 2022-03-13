@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main() {
+int main14() {
 	int m;
 	cin >> m;
 	int a;
