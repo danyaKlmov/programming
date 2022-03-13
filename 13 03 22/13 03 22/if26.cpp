@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-int main() {
+int main7() {
 	float x;
 	cin >> x;
 	if (x <= 0) {
@@ -12,7 +12,7 @@ int main() {
 		x = x * x;
 		cout << x;
 	} 
-	else if (x >= 2) {
+	else {
 		x = 4;
 		cout << x;
 	}
