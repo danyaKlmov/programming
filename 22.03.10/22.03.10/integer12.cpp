@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main() {
+int main13() {
 	int a;
 	cin >> a;
 	int d0 = a / 100;
