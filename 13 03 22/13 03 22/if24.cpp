@@ -7,11 +7,10 @@ int main18() {
 	cin >> x;
 	if (x > 0) {
 		x = 2 * sin(x);
-		cout << x;
 	}
 	else {
 		x = 6 - x;
-		cout << x;
 	}
+	cout << x;
 	return 0;
 }

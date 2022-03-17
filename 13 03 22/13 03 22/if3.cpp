@@ -10,7 +10,7 @@ int main10() {
 	else if (a < 0) {
 		a = a - 2;
 	}
-	else if (a == 0) {
+	else {
 		a = 10;
 	}
 	cout << a;

@@ -1,16 +1,25 @@
 #include <iostream>
 
 using namespace std;
-int main13() {
-	int a, b, c, medium;
+int main() {
+	int a, b, c, med; 
 	cin >> a >> b >> c;
-	medium = a;
-	if ((b > medium) && (b < c)) {
-		medium = b;
+	med = a;
+	if ((a > c) && (a > b)) {
+		med = c;
 	}
-	if ((c > medium) && (c < b)) {
-		medium = c;
+	if ((a > b) && (b > c)) {
+		med = b;
 	}
-	cout << medium;
+	else if ((a < b) && (a > c)) {
+		med = a; 
+	}
+	else if ((b > med) && (b < c)) {
+		med = b;
+	}
+	else if ((c > med) && (c < b)) {
+		med = c;
+	}
+		cout << med;
 	return 0;
 }
