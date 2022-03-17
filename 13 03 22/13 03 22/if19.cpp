@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-int main14() {
+int main17() {
 	int a, b, c, d;
 	cin >> a >> b >> c >> d;
 	if ((a != b) && (a != c) && (a != d)) {

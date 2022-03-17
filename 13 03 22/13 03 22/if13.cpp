@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-int main12() {
+int main13() {
 	int a, b, c, medium;
 	cin >> a >> b >> c;
 	medium = a;

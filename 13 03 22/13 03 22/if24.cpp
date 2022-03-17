@@ -2,7 +2,7 @@
 #include<cmath>
 
 using namespace std;
-int main15() {
+int main18() {
 	float x;
 	cin >> x;
 	if (x > 0) {
