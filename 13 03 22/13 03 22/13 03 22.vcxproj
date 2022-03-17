@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="if1.cpp" />
     <ClCompile Include="if12.cpp" />
     <ClCompile Include="if17.cpp" />
     <ClCompile Include="if18.cpp" />

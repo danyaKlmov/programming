@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-int main() {
+int main8() {
 	float x;
 	cin >> x;
 	int ix = (int)x;
