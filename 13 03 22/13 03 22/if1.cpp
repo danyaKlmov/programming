@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-int main() {
+int main9() {
 	int a;
 	cin >> a;
 	if (a > 0) {

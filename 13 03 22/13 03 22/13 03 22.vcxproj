@@ -148,6 +148,7 @@
     <ClCompile Include="if26.cpp" />
     <ClCompile Include="if27.cpp" />
     <ClCompile Include="if4.cpp" />
+    <ClCompile Include="if5.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
