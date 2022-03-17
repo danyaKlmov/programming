@@ -4,16 +4,12 @@ using namespace std;
 int main() {
 	float x;
 	cin >> x;
-	if (x <= 0) {
-		x = -x;
-		cout << x;
-	}
-	else if (x > 0 && x < 2) {
-		x = x * x;
+	if (x < -2 && x > 2) {
+		x = 2 * x;
 		cout << x;
 	}
 	else {
-		x = 4;
+		x = -3 * x;
 		cout << x;
 	}
 	return 0;
