@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="switch2.cpp" />
     <ClCompile Include="switch4.cpp" />
+    <ClCompile Include="switch6.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
