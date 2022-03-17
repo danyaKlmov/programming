@@ -148,6 +148,7 @@
     <ClCompile Include="if19.cpp" />
     <ClCompile Include="if2.cpp" />
     <ClCompile Include="if22.cpp" />
+    <ClCompile Include="if24.cpp" />
     <ClCompile Include="if25.cpp" />
     <ClCompile Include="if26.cpp" />
     <ClCompile Include="if27.cpp" />

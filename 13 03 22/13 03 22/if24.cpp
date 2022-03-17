@@ -1,15 +1,16 @@
 #include <iostream>
+#include<cmath>
 
 using namespace std;
-int main13() {
+int main() {
 	float x;
 	cin >> x;
-	if (x < -2 && x > 2) {
-		x = 2 * x;
+	if (x > 0) {
+		x = 2 * sin(x);
 		cout << x;
 	}
 	else {
-		x = -3 * x;
+		x = 6 - x;
 		cout << x;
 	}
 	return 0;
