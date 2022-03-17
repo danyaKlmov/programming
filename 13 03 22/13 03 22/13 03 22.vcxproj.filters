@@ -48,9 +48,6 @@
     <ClCompile Include="if13.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="if16.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="if19.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -60,7 +57,10 @@
     <ClCompile Include="if24.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="if16(2).cpp">
+    <ClCompile Include="if16.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="if3.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

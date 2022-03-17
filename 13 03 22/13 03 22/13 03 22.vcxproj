@@ -142,7 +142,6 @@
     <ClCompile Include="if1.cpp" />
     <ClCompile Include="if12.cpp" />
     <ClCompile Include="if13.cpp" />
-    <ClCompile Include="if16(2).cpp" />
     <ClCompile Include="if16.cpp" />
     <ClCompile Include="if17.cpp" />
     <ClCompile Include="if18.cpp" />
@@ -153,6 +152,7 @@
     <ClCompile Include="if25.cpp" />
     <ClCompile Include="if26.cpp" />
     <ClCompile Include="if27.cpp" />
+    <ClCompile Include="if3.cpp" />
     <ClCompile Include="if4.cpp" />
     <ClCompile Include="if5.cpp" />
   </ItemGroup>
