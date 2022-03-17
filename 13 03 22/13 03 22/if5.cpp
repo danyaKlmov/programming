@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-int main() {
+int main10() {
 	int a, b, c, k1, k2;
 	k1 = 0;
 	k2 = 0;
