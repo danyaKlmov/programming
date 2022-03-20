@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main() {
+int main3() {
 	int n;
 	cin >> n;
 	while (n % 3 == 0) {
