@@ -143,6 +143,7 @@
     <ClCompile Include="while3.cpp" />
     <ClCompile Include="while4.cpp" />
     <ClCompile Include="while6.cpp" />
+    <ClCompile Include="while7.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

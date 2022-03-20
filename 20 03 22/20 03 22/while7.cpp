@@ -2,13 +2,12 @@
 
 using namespace std;
 
-int main4() {
-	int n, k;
+int main() {
+	int n;
 	cin >> n;
-	k = 1;
-	while (n > 0) {
-		k *= n;
-		n -= 2;
+	int k = 1;
+	while (k * k <= n) {
+		k++;
 	}
 	cout << k;
 	return 0;
