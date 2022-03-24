@@ -2,12 +2,14 @@
 
 using namespace std;
 
-int main8() {
-	int n;
+int main9() {
+	int n, k;
 	cin >> n;
-	while (n % 2 == 0) {
-		;
+	k = 0;
+	while (n != 1) {
+		n = n / 2;
+		k++;
 	}
-	
+	cout << k;
 	return 0;
 } 
