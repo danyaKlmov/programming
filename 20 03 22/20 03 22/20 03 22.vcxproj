@@ -142,6 +142,7 @@
     <ClCompile Include="while1.cpp" />
     <ClCompile Include="while11.cpp" />
     <ClCompile Include="while15.cpp" />
+    <ClCompile Include="while2.cpp" />
     <ClCompile Include="while3.cpp" />
     <ClCompile Include="while4.cpp" />
     <ClCompile Include="while6.cpp" />
