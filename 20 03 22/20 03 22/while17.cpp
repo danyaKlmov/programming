@@ -1,7 +1,7 @@
 #include<iostream>
 
 using namespace std;
-int main17() {
+int main23() {
 	int n;
 	cin >> n;
 	while (n > 0) {

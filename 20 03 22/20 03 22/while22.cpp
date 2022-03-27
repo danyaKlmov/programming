@@ -5,14 +5,14 @@ int main() {
 	int n;
 	cin >> n;
 	int k = 2;
-	while ((k < n - 1) & ((n % k) != 0)) {
+	while ((k <= n - 1) && ((n % k) != 0)) {
 		k++;
 	}
-	if ((n % k) != 0) {
+	if (n == k) {
 		cout << "true";
 	}
 	else {
-		cout << "false";
+		cout << "false"; 
 	}
 	return 0;
 }

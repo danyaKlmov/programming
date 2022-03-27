@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main15() {
+int main22() {
 	int n, a, b;
 	cin >> n;
 	a = 0;
@@ -13,4 +13,4 @@ int main15() {
 	}
 	cout << a;
 	return 0;
-}
+} 

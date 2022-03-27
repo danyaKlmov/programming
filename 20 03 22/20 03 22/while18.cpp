@@ -1,7 +1,7 @@
 #include<iostream>
 
 using namespace std;
-int main18() {
+int main24() {
 	int n;
 	cin >> n;
 	int s = 0, a = 0;

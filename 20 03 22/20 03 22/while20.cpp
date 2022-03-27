@@ -1,10 +1,10 @@
 #include<iostream>
 
 using namespace std;
-int main19() {
+int main45() {
 	int n;
 	cin >> n;
-	while ((n > 0) & (( n % 10) != 2)) {
+	while ((n > 0) && (( n % 10) != 2)) {
 		n /= 10;
 	}
 	if ((n > 0) && ( n % 10) == 2) {
