@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="while1.cpp" />
+    <ClCompile Include="while10.cpp" />
     <ClCompile Include="while11.cpp" />
     <ClCompile Include="while12.cpp" />
     <ClCompile Include="while13.cpp" />

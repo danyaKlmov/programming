@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main() {
+int main14() {
 	double a = 10, s;
 	int k = 0;
 	s = 0;
@@ -15,4 +15,4 @@ int main() {
 	}
 	cout << k << ' ' << s;
 	return 0;
-}
+} 
