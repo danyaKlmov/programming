@@ -1,13 +1,14 @@
 #include<iostream>
 
 using namespace std;
-int main20() {
+int main() {
 	int n;
 	cin >> n;
-	while ((n > 0) & ((n % 10) % 2 == 0)) {
-		n /= 10;
+	int k = 2;
+	while ((k < n - 1) & ((n % k) != 0)) {
+		k++;
 	}
-	if ((n % 10) % 2 != 0) {
+	if ((n % k) != 0) {
 		cout << "true";
 	}
 	else {
