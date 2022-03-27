@@ -1,12 +1,15 @@
 #include<iostream>
 
 using namespace std;
-int main17() {
+int main() {
 	int n;
 	cin >> n;
+	int s = 0, a = 0;
 	while (n > 0) {
-		cout << n % 10;
+		a++;
+		s += n % 10;
 		n /= 10;
 	}
+	cout << a << ' ' << s;
 	return 0;
 }

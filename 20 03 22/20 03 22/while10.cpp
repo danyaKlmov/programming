@@ -5,9 +5,9 @@ using namespace std;
 int main15() {
 	int n, a, b;
 	cin >> n;
-	a = 1;
+	a = 0;
 	b = 3;
-	while (b <= n) {
+	while (b < n) {
 		b *= 3;
 		a++;
 	}

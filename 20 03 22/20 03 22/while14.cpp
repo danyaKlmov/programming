@@ -5,12 +5,12 @@ using namespace std;
 int main16() {
 	double a, s;
 	cin >> a;
-	s = 1;
-	int k = 1;
+	s = 0;
+	int k = 0;
 	while (s <= a) {
 		k++;
 		s += 1.0 / k;
 	}
-	cout << k << ' ' << s;
+	cout << k - 1 << ' ' << s;
 	return 0; 
 } 
