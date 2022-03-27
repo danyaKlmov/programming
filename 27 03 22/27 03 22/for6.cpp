@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main() {
+int main5() {
 	double c;
 	cin >> c;
 	for (int m = 12; m <= 20; m += 2)
