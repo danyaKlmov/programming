@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main() {
+int main3() {
 	double c;
 	cin >> c;
 	for (int i = 1; i <= 10; ++i)
