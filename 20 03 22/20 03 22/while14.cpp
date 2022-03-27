@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main() {
+int main16() {
 	double a, s;
 	cin >> a;
 	s = 1;
@@ -12,5 +12,5 @@ int main() {
 		s += 1.0 / k;
 	}
 	cout << k << ' ' << s;
-	return 0;
+	return 0; 
 } 
