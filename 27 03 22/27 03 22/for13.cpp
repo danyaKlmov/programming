@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main() {
+int main8() {
 	int n, sign = 1;
 	cin >> n;
 	double a = 0;
