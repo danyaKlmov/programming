@@ -147,6 +147,7 @@
     <ClCompile Include="array27.cpp" />
     <ClCompile Include="array3.cpp" />
     <ClCompile Include="array39.cpp" />
+    <ClCompile Include="array47.cpp" />
     <ClCompile Include="array6.cpp" />
     <ClCompile Include="array5.cpp" />
     <ClCompile Include="array7.cpp" />
