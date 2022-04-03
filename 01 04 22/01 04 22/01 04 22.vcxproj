@@ -144,6 +144,7 @@
     <ClCompile Include="array2.cpp" />
     <ClCompile Include="array20.cpp" />
     <ClCompile Include="array25.cpp" />
+    <ClCompile Include="array27.cpp" />
     <ClCompile Include="array3.cpp" />
     <ClCompile Include="array6.cpp" />
     <ClCompile Include="array5.cpp" />
