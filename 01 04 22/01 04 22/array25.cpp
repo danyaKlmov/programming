@@ -2,19 +2,22 @@
 
 using namespace std;
 
-int main5() {
+int main() {
 	int n;
 	cin >> n;
 	int* a = new int[n];
 	for (int i = 0; i < n; ++i) {
-		cout << i + 1;
+		cin >> a[i];
 	}
-	for (int i = 1; i < n; i += 2) {
-		cout << a[i] << ' ';
+	bool b = true;
+	int c;
+	c = a[1] / a[0];
+	for (int i = 1; i < n; ++i) {
+		if (!(a[i] == a[1] * a[i - 1] / a[0]) && (a[1] * a[i - 1] % a[0] == 0)) {
+			b = false;
+		}
 	}
-	for (int i = n - 1 - (n - 1) % 2; i >= 0; i -= 2) {
-		cout << a[i] << ' ';
-	}
-	delete[] a;
+	cout << b; 
+	delete[] a; 
 	return 0;
 }

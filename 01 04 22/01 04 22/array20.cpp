@@ -2,18 +2,18 @@
 
 using namespace std;
 
-int main4() {
+int main89() {
 	int n, k, l;
 	cin >> n >> k >> l;
 	int* a = new int[n];
 	for (int i = 0; i < n; ++i) {
-		cout << i + 1;
+		cin >> a[i]; 
 	}
 	int s = 0;
-	for (int i = k - 1; i <= l - 1; ++i) {
+	for (int i = k; i <= l; ++i) {
 		s += a[i];
 	}
-	delete[] a;
 	cout << s;
+	delete[] a;
 	return 0;
 }
