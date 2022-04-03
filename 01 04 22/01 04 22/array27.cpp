@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main() {
+int main46() {
 	int n;
 	cin >> n;
 	int* a = new int[n];
