@@ -11,7 +11,7 @@ struct Transport {
 	double weight;
 };
 
-int main() {
+int main1() {
 	int n;
 	cout << "vvedite kol-vo passazhirov:\n";
 	cin >> n;
