@@ -11,7 +11,7 @@ struct Transport {
 	double weight;
 };
 
-int main7() {
+int main() {
 	int n;
 	cout << "vvedite kol-vo passazhirov:\n";
 	cin >> n;
@@ -22,7 +22,7 @@ int main7() {
 	}
 	int k = 0;
 	for (int i = 0; i < n; ++i) {
-		if (a[i].weight + a[i].weight / n) {
+		if (a[i].weight > a[i].weight + a[i].weight / n) {
 			k = k;
 		}
 	}
