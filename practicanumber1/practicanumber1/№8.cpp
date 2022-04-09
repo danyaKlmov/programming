@@ -14,7 +14,7 @@ struct student {
 	int sopromat;
 };
 
-int main() {
+int main5() {
 	int n;
 	cout << "vvedite kol-vo studentov:\n ";
 	cin >> n;
