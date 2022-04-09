@@ -14,7 +14,7 @@ struct student {
 	int sopromat;
 };
 
-int main4() {
+int main() {
 	int n;
 	cout << "vvedite kol-vo studentov:\n ";
 	cin >> n;
@@ -25,23 +25,11 @@ int main4() {
 	}
 	int k = 0;
 	for (int i = 0; i < n; i++) {
-		if (a[i].matematika <= 2) {
-			k++;
-		}
-		if (a[i].phisycs <= 2) {
-			k++;
-		}
-		if (a[i].cherchenie <= 2) {
-			k++;
-		}
-		if (a[i].science <= 2) {
-			k++;
-		}
-		if (a[i].sopromat <= 2) {
+		if ((a[i].matematika > 2) && (a[i].phisycs > 2) && (a[i].cherchenie > 2) && (a[i].science > 2) && (a[i].sopromat > 2)) {
 			k++;
 		}
 	}
-	cout << "kol-vo ocenok: " << k;
+	cout << "kol-vo chelovek: " << k;
 	delete[] a;
 	return 0;
 }
