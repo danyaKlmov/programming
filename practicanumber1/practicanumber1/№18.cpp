@@ -21,12 +21,17 @@ int main() {
 		cin >> a[i].name >> a[i].surname >> a[i].patronymic >> a[i].luggage >> a[i].weight;
 	}
 	int k = 0;
+	double sweight = 0;
 	for (int i = 0; i < n; ++i) {
-		if (a[i].weight > a[i].weight + a[i].weight / n) {
-			k = k;
-		}
+		sweight += a[i].weight;
 	}
-	cout << "sredniy ves bagazha: " << k;
+	sweight = sweight / n;
+	for (int i = 0; i < n; ++i) {
+		if (a[i].weight > sweight) {
+		k++;
+}
+	}
+	cout << "kol-vo passazhirov: " << k;
 	delete[] a;
 	return 0;
 }

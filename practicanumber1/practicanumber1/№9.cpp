@@ -14,7 +14,7 @@ struct Anketa {
 	int age;
 };
 
-int main6() {
+int main7() {
 	int n;
 	cout << "vvedite kol-vo chelovek:\n ";
 	cin >> n;

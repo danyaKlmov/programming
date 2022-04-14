@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{01a5d0f8-54bb-4e59-a3d6-11b182fcce83}</ProjectGuid>
-    <RootNamespace>practicanumber1</RootNamespace>
+    <ProjectGuid>{e65ea3b9-3996-4b9f-ad75-a1bde92b4064}</ProjectGuid>
+    <RootNamespace>practise2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,14 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="№1.cpp" />
-    <ClCompile Include="№17.cpp" />
-    <ClCompile Include="№18.cpp" />
-    <ClCompile Include="№2.cpp" />
-    <ClCompile Include="№3.cpp" />
-    <ClCompile Include="№6.cpp" />
-    <ClCompile Include="№8.cpp" />
-    <ClCompile Include="№9.cpp" />
+    <ClCompile Include="..\..\01 04 22\01 04 22\array1.cpp" />
+    <ClCompile Include="..\..\01 04 22\01 04 22\array5.cpp" />
+    <ClCompile Include="№1%2819%29.cpp" />
+    <ClCompile Include="№2%2844%29.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\01 04 22\01 04 22.sln" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

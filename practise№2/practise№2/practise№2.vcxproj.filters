@@ -15,29 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="№1.cpp">
+    <ClCompile Include="№1%2819%29.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="№2.cpp">
+    <ClCompile Include="..\..\01 04 22\01 04 22\array1.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="№3.cpp">
+    <ClCompile Include="..\..\01 04 22\01 04 22\array5.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="№6.cpp">
+    <ClCompile Include="№2%2844%29.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="№8.cpp">
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\01 04 22\01 04 22.sln">
       <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="№9.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="№17.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="№18.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
+    </None>
   </ItemGroup>
 </Project>
