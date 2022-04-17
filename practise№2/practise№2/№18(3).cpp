@@ -6,8 +6,8 @@ void read_array2(int* array, int size);
 int count_multiple_2(int* array, int size);
 
 int main999() {
-	int n, t;
-	cin >> n >> t;
+	int n;
+	cin >> n;
 	int* A = new int[n];
 	int* B = new int[n];
 	read_array2(A, n);

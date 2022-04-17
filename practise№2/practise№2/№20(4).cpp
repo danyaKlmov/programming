@@ -3,11 +3,11 @@
 using namespace std;
 
 void read_array1(int* array, int size);
-int count_multiple_4(int* array, int size);
+int count_multiple_4(int* array, int size, int t);
 
-int main123() {
-	int n;
-	cin >> n;
+int main() {
+	int n, t;
+	cin >> n >> t;
 	int* A = new int[n];
 	int* B = new int[n];
 	read_array1(A, n);
@@ -31,11 +31,8 @@ void read_array1(int* array, int size) {
 		cin >> array[i];
 	}
 }
-int count_multiple_4(int* array, int size) {
+int count_multiple_4(int* array, int size, int t) {
 	int count = 0;
-	int t;
-	cout << "vvedite t\n";
-	cin >> t;
 	for (int i = 0; i < size; i++) {
 		if (array[i] < t) {
 			count++;

@@ -16,9 +16,9 @@ int main() {
 		}
 	}
 	double norma = 0;
-	for (int col = 0; col < n; col++) {
+	for (int line = 0; line < n; line++) {
 		double s = 0;
-		for (int line = 0; line < n; line++) {
+		for (int col = 0; col < n; col++) {
 			s += abs(matrix[line][col]);
 		}
 		if (s > norma) {
