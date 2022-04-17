@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main895() {
+int main() {
 	int n;
 	cin >> n;
 	double** matrix = new double* [n];
@@ -32,4 +32,3 @@ int main895() {
 	delete[] matrix;
 	return 0;
 }
-

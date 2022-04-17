@@ -142,7 +142,10 @@
     <ClCompile Include="..\..\01 04 22\01 04 22\array1.cpp" />
     <ClCompile Include="..\..\01 04 22\01 04 22\array5.cpp" />
     <ClCompile Include="№1%2819%29.cpp" />
+    <ClCompile Include="№18(3).cpp" />
     <ClCompile Include="№2%2844%29.cpp" />
+    <ClCompile Include="№2(45).cpp" />
+    <ClCompile Include="№20(4).cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\01 04 22\01 04 22.sln" />
