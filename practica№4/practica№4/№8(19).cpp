@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main()  {
+int main1()  {
 	int k;
 	cin >> k;
 	char arr[5] = { 0 };
