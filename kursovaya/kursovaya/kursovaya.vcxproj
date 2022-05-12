@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{01a5d0f8-54bb-4e59-a3d6-11b182fcce83}</ProjectGuid>
-    <RootNamespace>practicanumber1</RootNamespace>
+    <ProjectGuid>{29e7a442-b7f0-4e34-bc30-91df06775f2d}</ProjectGuid>
+    <RootNamespace>kursovaya</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,14 +139,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="№1.cpp" />
-    <ClCompile Include="ББСО-01-21_Климов Д. Е.cpp" />
-    <ClCompile Include="№18.cpp" />
-    <ClCompile Include="№2.cpp" />
-    <ClCompile Include="№3.cpp" />
-    <ClCompile Include="№6.cpp" />
-    <ClCompile Include="№8.cpp" />
-    <ClCompile Include="№9.cpp" />
+    <ClCompile Include="..\..\practicanumber1\practicanumber1\ББСО-01-21_Климов Д. Е.cpp" />
+    <ClCompile Include="..\..\practica№7\practica№7\ББСО-01-21_Климов Д. Е.cpp" />
+    <ClCompile Include="..\..\practica№8\practica№8\ББСО-01-21_Климов Д. Е.cpp" />
+    <ClCompile Include="..\..\practise№13\practise№13\№8(19).cpp" />
+    <ClCompile Include="..\..\practise№6\practise№6\ББСО-01-21_Климов Д. Е.cpp" />
+    <ClCompile Include="attack ant.h" />
+    <ClCompile Include="colonium.cpp" />
+    <ClCompile Include="config_provider.cpp" />
+    <ClCompile Include="fighter_ant.cpp" />
+    <ClCompile Include="queen_ant.h" />
+    <ClCompile Include="resource.cpp" />
+    <ClCompile Include="work_ant.h" />
+    <ClCompile Include="ant.h" />
+    <ClCompile Include="world.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\practica№8\practica№8\practica№8.vcxproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="attack.h" />
+    <ClInclude Include="colonium.h" />
+    <ClInclude Include="config_provider.h" />
+    <ClInclude Include="fighter_ant.h" />
+    <ClInclude Include="health.h" />
+    <ClInclude Include="heap.h" />
+    <ClInclude Include="queen.daughter.h" />
+    <ClInclude Include="queen.mom.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="world.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -36,7 +36,7 @@ public:
 	}
 };
 
-int main() {
+int main1() {
 	MyClass* c = new MyClass;
 	c->*(c->pointers[0]) = 'c';
 	c->*(c->pointers[1]) = 'c';

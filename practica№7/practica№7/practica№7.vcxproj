@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{01a5d0f8-54bb-4e59-a3d6-11b182fcce83}</ProjectGuid>
-    <RootNamespace>practicanumber1</RootNamespace>
+    <ProjectGuid>{1740c15a-b467-4a2a-8334-5121092cbce4}</ProjectGuid>
+    <RootNamespace>practica7</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,14 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="№1.cpp" />
-    <ClCompile Include="ББСО-01-21_Климов Д. Е.cpp" />
-    <ClCompile Include="№18.cpp" />
-    <ClCompile Include="№2.cpp" />
-    <ClCompile Include="№3.cpp" />
-    <ClCompile Include="№6.cpp" />
-    <ClCompile Include="№8.cpp" />
-    <ClCompile Include="№9.cpp" />
+    <ClCompile Include="..\..\practise№6\practise№6\№5%2819%29.cpp" />
+    <ClCompile Include="№9%2819%29.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
