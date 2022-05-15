@@ -57,6 +57,9 @@
     <ClCompile Include="fighter_ant.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="ant.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\practica№8\practica№8\practica№8.vcxproj">

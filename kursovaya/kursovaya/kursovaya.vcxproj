@@ -144,6 +144,7 @@
     <ClCompile Include="..\..\practica№8\practica№8\ББСО-01-21_Климов Д. Е.cpp" />
     <ClCompile Include="..\..\practise№13\practise№13\№8(19).cpp" />
     <ClCompile Include="..\..\practise№6\practise№6\ББСО-01-21_Климов Д. Е.cpp" />
+    <ClCompile Include="ant.cpp" />
     <ClCompile Include="attack ant.h" />
     <ClCompile Include="colonium.cpp" />
     <ClCompile Include="config_provider.cpp" />

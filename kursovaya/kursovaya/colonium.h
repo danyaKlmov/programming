@@ -15,4 +15,9 @@ class colonium : public heap {
 public:
 	colonium(int fighter_count, int work_ant_count);
 	~colonium();
+	void print_colonuim_info();
+	void turn(world* w);
+	void action(world* w);
+	void end_turn(world* w);
+	void remove_ant(ant* a);
 };

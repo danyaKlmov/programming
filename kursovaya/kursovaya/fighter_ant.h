@@ -10,6 +10,8 @@ public:
 	}
 	void virtual travel(heap* h) = 0;
 	void attack(ant* enemy);
-	void turn();
+	void turn(world* w);
+	void action(world* w);
+	void end_turn(world* w);
 	virtual ~fighter() {}
 };

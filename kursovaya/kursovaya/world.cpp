@@ -1,5 +1,6 @@
 #include"world.h"
 #include"heap.h"
+#include"config_provider.h"
 
  world::world(int heap_count, int colonium_count) {
 	this->heap_count = heap_count;
@@ -32,12 +33,37 @@
 	 heap->add_resource(resource_type::leaf, resources);
 	 return heap;
  }
- colonium* world::create_colonium() {
+ colonium* world::create_colonium() { 
 	 int fighter_ant_count, worker_ant_count;
 	 vector<int> min_max_colonium = config_provider::get_fighter_ant_count();
 	 fighter_ant_count = get_fighter_ant_count[0] + (rand() % (get_fighter_ant_count[1] - get_fighter_ant_count[0]));
 	 vector<int> min_max_colonium = config_provider::get_worker_ant_count();
-	 worker_ant_count = get_ worker_ant_count[0] + (rand() % (get_ worker_ant_count[1] - get_ worker_ant_count[0]));
+	 worker_ant_count = get_worker_ant_count[0] + (rand() % (get_worker_ant_count[1] - get_worker_ant_count[0]));
 	 colonium* colonium = new colonium(fighter_count, work_ant_count);
 	 return colonium;
  }
+
+ void world::start_game() {
+	 auto times = config_provider::min_max_time_drought();
+
+	 int time = times[0] + (rand() % (times[1] - times[0]));
+	 for (int i = 0; i < time; i++) {
+		 print_turn_preamble(i);
+		 for (int a = 0; a < colonium_count; a++) {
+			 coloniums[a]->print_colonuim_info();
+			 coloniums[a]->turn(this);
+		 }
+		 for (int a = 0; a < colonium_count; a++) {
+			 coloniums[a]->print_colonuim_info();
+			 coloniums[a]->action(this);
+		 }
+		 for (int a = 0; a < colonium_count; a++) {
+			 coloniums[a]->print_colonuim_info();
+			 coloniums[a]->end_turn(this);
+		 }
+		 for (int a = 0; a < heap_count; a++) {
+			 heaps[a]->clear_ants();
+		 }
+	 }
+ }
+

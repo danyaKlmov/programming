@@ -6,7 +6,9 @@
 class queen_ant_mom : public queen_ant {
 public:
 	void virtual laying_of_larvae(colonium* h) = 0;
-	void turn();
+	void turn(world* w);
+	void action(world* w);
+	void end_turn(world* w);
 	void print_type() {
 		cout << "queen mom";
 	}

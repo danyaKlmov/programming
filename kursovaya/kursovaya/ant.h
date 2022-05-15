@@ -31,6 +31,8 @@ public:
 	int get_protect() {
 		return protect;
 	}
-	void virtual turn() = 0;
+	void virtual turn(world* w);
+	void virtual action(world* w) = 0;
+	void end_turn(world* w);
 	virtual ~ant() {}
 };

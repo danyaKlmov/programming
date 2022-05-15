@@ -18,6 +18,8 @@ public:
 	static vector<int> get_min_max_fighter_protect();
 	static vector<int> get_min_max_queen_protect();
 	static vector<int> get_min_max_heap();
+	static vector<int> get_min_max_colonium();
 	static vector<int> get_min_max_worker_ant_count();
 	static vector<int> get_min_max_fighter_ant_count();
+	static vector<int> min_max_time_drought();
 };

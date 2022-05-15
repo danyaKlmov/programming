@@ -8,5 +8,7 @@ public:
 	}
 	void virtual travel(heap* h) = 0;
 	void virtual resourcing(heap* h) = 0;
-	void turn();
+	void turn(world* w);
+	void action(world* w);
+	void end_turn(world* w);
 };

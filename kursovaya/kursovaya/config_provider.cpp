@@ -159,6 +159,18 @@ vector<int> config_provider::get_min_max_heap() {
 	return heaps;
 }
 
+vector<int> config_provider::get_min_max_colonium() {
+	ifstream input("configs/min_max_colonium.cfg");
+	vector<int> coloniums;
+	int max_colonium, min_colonium;
+	input >> min_colonium;
+	input >> max_colonium;
+	coloniums.push_back(min_colonium);
+	coloniums.push_back(max_colonium);
+	input.close();
+	return coloniums;
+}
+
 vector<int> config_provider::get_min_max_worker_ant_count() {
 	ifstream input("configs/min_max_worker_ant_counts.cfg");
 	vector<int> worker_ant_counts;
@@ -181,5 +193,17 @@ vector<int> config_provider::get_min_max_fighter_ant_count() {
 	fighter_ant_counts.push_back(max_fighter_ant_count);
 	input.close();
 	return fighter_ant_counts;
+}
+
+vector<int> config_provider::min_max_time_drought() {
+	ifstream input("configs/min_max_time_drought.cfg");
+	vector<int> time_droughts;
+	int max_time_drought, min_time_drought;
+	input >> min_time_drought;
+	input >> max_time_drought;
+	time_droughts.push_back(min_time_drought);
+	time_droughts.push_back(max_time_drought);
+	input.close();
+	return time_droughts;
 }
 			 

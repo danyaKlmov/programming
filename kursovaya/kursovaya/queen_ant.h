@@ -10,7 +10,9 @@ class queen_ant : public fighter_ant {
 	string name;
 public:
 	void virtual laying_of_larvae(colonium* h) = 0;
-	void turn();
+	void turn(world* w);
+	void action(world* w);
+	void end_turn(world* w);
 	void virtual print_type() = 0;
 	queen_ant(const string& name, int health, int attack, int protect, int time_laying_of_larvae, int larvae_count)
 		: fighter_ant(attack, health, protect) {

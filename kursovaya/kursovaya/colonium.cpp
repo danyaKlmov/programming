@@ -1,5 +1,5 @@
 #include"colonium.h"
-#include"data_provider.h"
+#include"config_provider.h"
 #include<cstdlib>
 
 
@@ -24,9 +24,9 @@ colonium::~colonium() {
 	}
 }
 ant* colonium::create_fighter() {
-	auto healths = data_provider::get_min_max_fighter_ant_healths();
-	auto attacks = data_provider::get_min_max_fighter_ant_attacks();
-	auto protects = data_provider::get_min_max_fighter_ant_protect();
+	auto healths = config_provider::get_min_max_fighter_ant_healths();
+	auto attacks = config_provider::get_min_max_fighter_ant_attacks();
+	auto protects = config_provider::get_min_max_fighter_ant_protect();
 
 	int health = healths[0] + (rand() % (healths[1] - healths[0]));
 	int attack = attacks[0] + (rand() % (attacks[1] - attacks[0]));
@@ -34,22 +34,22 @@ ant* colonium::create_fighter() {
 	return new fighter_ant(attack, health, protect);
 }
 ant* colonium::create_work_ant() {
-	auto healths = data_provider::get_min_max_work_ant_healths();
-	auto protects = data_provider::get_min_max_work_ant_protect();
+	auto healths = config_provider::get_min_max_work_ant_healths();
+	auto protects = config_provider::get_min_max_work_ant_protect();
 
 	int health = healths[0] + (rand() % (healths[1] - healths[0]));
 	int protect = protects[0] + (rand() % (protects[1] - protects[0]));
 	return new work_ant(health, protect);
 }
 ant* colonium::create_queen_ant() {
-	auto names = data_provider::get_queen_names();
-	auto healths = data_provider::get_min_max_queen_healths();
-	auto attacks = data_provider::get_min_max_queen_attacks();
-	auto larvaes = data_provider::get_min_max_queen_larvae();
+	auto names = config_provider::get_queen_names();
+	auto healths = config_provider::get_min_max_queen_healths();
+	auto attacks = config_provider::get_min_max_queen_attacks();
+	auto larvaes = config_provider::get_min_max_queen_larvae();
 	auto time_laying_of_larvaes = data_provider::get_min_max_queen_time_laying_of_larvae();
-	auto protects = data_provider::get_min_max_queen_protect();
+	auto protects = config_provider::get_min_max_queen_protect();
 
-	srting name = names[rand() % names.size()];
+	string name = names[rand() % names.size()];
 
 	int health = healths[0] + (rand() % (healths[1] - healths[0]));
 	int attack = attacks[0] + (rand() % (attacks[1] - attacks[0]));
@@ -58,3 +58,21 @@ ant* colonium::create_queen_ant() {
 	int protect = protects[0] + (rand() % (protects[1] - protects[0]));
 	return new queen_ant_mom(name, health, attack, protect, time_laying_of_larvae, larvae);
 };
+
+void colonium::turn(world* w) {
+	for (int c = 0; c < ants.size(); c++) {
+		ants[c].turn(w);
+	}
+}
+
+void colonium::action(world* w) {
+	for (int d = 0; d < ants,size(); d++) {
+		ants[d].action(w);
+	}
+}
+
+void colonium::end_turn(world* w) {
+	for (int i = 0; i < ants.size(); i++) {
+		ants[i].end_turn();
+	}
+}
