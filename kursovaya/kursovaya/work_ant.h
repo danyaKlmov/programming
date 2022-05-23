@@ -1,14 +1,12 @@
 #include"ant.h"
-#include"heap.h"
 
 class work_ant : public ant {
 public:
 	work_ant(int health, int protect)
 		: ant(health, protect) {
 	}
-	void virtual travel(heap* h) = 0;
-	void virtual resourcing(heap* h) = 0;
-	void turn(world* w);
+	void resourcing(heap* h);
 	void action(world* w);
-	void end_turn(world* w);
+	void virtual print_info();
+	void virtual print_type();
 };

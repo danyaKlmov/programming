@@ -15,12 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\practise№13\practise№13\№8(19).cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\practica№8\practica№8\ББСО-01-21_Климов Д. Е.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="ant.h">
       <Filter>Файлы заголовков</Filter>
     </ClCompile>
@@ -33,18 +27,6 @@
     <ClCompile Include="queen_ant.h">
       <Filter>Файлы заголовков</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\practica№7\practica№7\ББСО-01-21_Климов Д. Е.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\practise№6\practise№6\ББСО-01-21_Климов Д. Е.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="resource.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\practicanumber1\practicanumber1\ББСО-01-21_Климов Д. Е.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="world.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -54,17 +36,27 @@
     <ClCompile Include="config_provider.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="fighter_ant.cpp">
+    <ClCompile Include="fighter.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="ant.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\practica№8\practica№8\practica№8.vcxproj">
+    <ClCompile Include="queen_ant.cpp">
       <Filter>Исходные файлы</Filter>
-    </None>
+    </ClCompile>
+    <ClCompile Include="queem_mom.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="queen_daughter.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="work_ant.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="heap.h">
@@ -82,16 +74,16 @@
     <ClInclude Include="world.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="queen.mom.h">
+    <ClInclude Include="queen_mom.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="queen.daughter.h">
+    <ClInclude Include="queen_daughter.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="fighter_ant.h">
+    <ClInclude Include="fighter.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="config_provider.h">

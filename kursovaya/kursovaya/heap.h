@@ -1,6 +1,6 @@
 #include<map>
-#include"resource.h"
 #include<vector>
+#include"resource.h"
 
 using namespace std;
 
@@ -27,9 +27,8 @@ public:
 	void add_resource(resource_type type, int count) {
 		resources[type] += count;
 	}
-	resource take_resource(resource_type type) {
+	void take_resource(resource_type type) {
 		resources[type] -= 1;
-		return resource(type);
 	}
 
 };

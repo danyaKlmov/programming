@@ -139,34 +139,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\practicanumber1\practicanumber1\ББСО-01-21_Климов Д. Е.cpp" />
-    <ClCompile Include="..\..\practica№7\practica№7\ББСО-01-21_Климов Д. Е.cpp" />
-    <ClCompile Include="..\..\practica№8\practica№8\ББСО-01-21_Климов Д. Е.cpp" />
-    <ClCompile Include="..\..\practise№13\practise№13\№8(19).cpp" />
-    <ClCompile Include="..\..\practise№6\practise№6\ББСО-01-21_Климов Д. Е.cpp" />
     <ClCompile Include="ant.cpp" />
     <ClCompile Include="attack ant.h" />
     <ClCompile Include="colonium.cpp" />
     <ClCompile Include="config_provider.cpp" />
-    <ClCompile Include="fighter_ant.cpp" />
+    <ClCompile Include="fighter.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="queem_mom.cpp" />
+    <ClCompile Include="queen_ant.cpp" />
     <ClCompile Include="queen_ant.h" />
-    <ClCompile Include="resource.cpp" />
+    <ClCompile Include="queen_daughter.cpp" />
+    <ClCompile Include="work_ant.cpp" />
     <ClCompile Include="work_ant.h" />
     <ClCompile Include="ant.h" />
     <ClCompile Include="world.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\practica№8\practica№8\practica№8.vcxproj" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="attack.h" />
     <ClInclude Include="colonium.h" />
     <ClInclude Include="config_provider.h" />
-    <ClInclude Include="fighter_ant.h" />
+    <ClInclude Include="fighter.h" />
     <ClInclude Include="health.h" />
     <ClInclude Include="heap.h" />
-    <ClInclude Include="queen.daughter.h" />
-    <ClInclude Include="queen.mom.h" />
+    <ClInclude Include="queen_daughter.h" />
+    <ClInclude Include="queen_mom.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="world.h" />
   </ItemGroup>
