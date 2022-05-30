@@ -1,5 +1,9 @@
+#ifndef HEAP_H
+#define HEAP_H
+
 #include<map>
 #include<vector>
+#include<string>
 #include"resource.h"
 
 using namespace std;
@@ -7,8 +11,18 @@ using namespace std;
 class ant;
 class heap {
 	map<resource_type, int> resources;
+protected:
 	vector<ant*> ants;
+	string name;
 public:
+	void print_heap_info();
+	heap(const string& name, int stick_count, int rock_count, int leaf_count, int drop_count) {
+		resources[resource_type::drop] = drop_count;
+		resources[resource_type::stick] = stick_count;
+		resources[resource_type::rock] = rock_count;
+		resources[resource_type::leaf] = leaf_count;
+		this->name = name;
+	}
 	int get_ants_count() {
 		return ants.size();
 	}
@@ -31,4 +45,10 @@ public:
 		resources[type] -= 1;
 	}
 
+	string get_name() {
+		return name;
+	}
+
 };
+
+#endif

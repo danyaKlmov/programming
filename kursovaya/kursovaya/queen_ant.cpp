@@ -1,13 +1,13 @@
-#include"queen_ant.h"
-#include"colonium.h"
+#include"all.h"
 
 void queen_ant::print_info() {
-	cout << "\tName: " << name << '\n'
-		<< "\tHealth: " << health << '\n'
-		<< "\tAttack: " << attack << '\n'
-		<< "\tProtect: " << protect << '\n'
-		<< "\tTime laying of larvae: " << time_laying_of_larvae << '\n'
-		<< "\tLarvae: " << larvae << '\n' << '\n';
+	print_type();
+	cout << "\n\tИмя: " << name << '\n'
+		<< "\tЗдоровье: " << health << '\n'
+		<< "\tАтака: " << strength << '\n'
+		<< "\tЗащита: " << protect << '\n'
+		<< "\tВремя созревания личинок: " << time_laying_of_larvae << '\n'
+		<< "\tЛичинок осталось: " << larvae_count << '\n';
 }
 
 void queen_ant::action(world* w) {
@@ -22,4 +22,8 @@ void queen_ant::end_turn(world* w) {
 		get_colonium()->add_ant(larvae);
 		larvae = nullptr;
 	}
+}
+
+bool queen_ant::is_relative(queen_ant* q) {
+	return q->check_parentness(this);
 }

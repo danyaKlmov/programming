@@ -1,0 +1,32 @@
+#ifndef ALL_H
+#define ALL_H
+
+#include "colonium.h"
+#include "heap.h"
+#include"exp_orange_work_ant.h"
+#include"red_queen_daughter.h"
+#include"orange_queen_daughter.h"
+#include"red_queen_mom.h"
+#include"simple_fighter.h"
+#include"orange_queen_mom.h"
+#include"cricket.h"
+#include"older_accurate_fighter.h"
+#include"simple_hunter_fighter.h"
+#include"older_fighter.h"
+#include"legendary_fighter.h"
+#include"legendary_work_ant.h"
+#include"simple_stocky_work_ant.h"
+#include"simple_talant_work_ant.h"
+#include"exp_red_work_ant.h"
+#include"older_work_ant.h"
+#include"scarab.h"
+#include "ant.h"
+#include "fighter.h"
+#include "work_ant.h"
+#include "queen_ant.h" 
+#include "queen_mom.h"
+#include "queen_daughter.h"
+#include "resource.h"
+#include "world.h"
+
+#endif

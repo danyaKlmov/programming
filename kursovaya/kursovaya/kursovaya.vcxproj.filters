@@ -21,9 +21,6 @@
     <ClCompile Include="work_ant.h">
       <Filter>Файлы заголовков</Filter>
     </ClCompile>
-    <ClCompile Include="attack ant.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClCompile>
     <ClCompile Include="queen_ant.h">
       <Filter>Файлы заголовков</Filter>
     </ClCompile>
@@ -31,9 +28,6 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="colonium.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="config_provider.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="fighter.cpp">
@@ -57,18 +51,66 @@
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="older_work_ant.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="exp_red_work_ant.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="simple_talant_work_ant.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="exp_orange_work_ant.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="legendary_work_ant.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="simple_stocky_work_ant.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="legendary_fighter.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="older_fighter.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="simple_hunter_fighter.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="older_accurate_fighter.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="scarab.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="cricket.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="orange_queen_mom.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="red_queen_mom.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="orange_queen_daughter.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="red_queen_daughter.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="simple_fighter.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="heap.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="heap.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="colonium.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="health.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="attack.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="world.h">
@@ -86,8 +128,81 @@
     <ClInclude Include="fighter.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="config_provider.h">
+    <ClInclude Include="all.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="older_work_ant.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="exp_red_work_ant.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="simple_talant_work_ant.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="simple_stocky_work_ant.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="legendary_work_ant.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="legendary_fighter.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="older_fighter.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="simple_hunter_fighter.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="older_accurate_fighter.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="cricket.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="scarab.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="exp_orange_work_ant.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="simple_fighter.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="red_queen_mom.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="orange_queen_mom.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="red_queen_daughter.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="orange_queen_daughter.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="simulation.log" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="configs\coloniums_names.cfg" />
+    <None Include="configs\min_max_colonium.cfg" />
+    <None Include="configs\min_max_fighter_ant_counts.cfg" />
+    <None Include="configs\min_max_fighter_attack.cfg" />
+    <None Include="configs\min_max_fighter_healths.cfg" />
+    <None Include="configs\min_max_fighter_protects.cfg" />
+    <None Include="configs\min_max_heaps.cfg" />
+    <None Include="configs\min_max_queen_attack.cfg" />
+    <None Include="configs\min_max_queen_healths.cfg" />
+    <None Include="configs\min_max_queen_larvae.cfg" />
+    <None Include="configs\min_max_queen_protects.cfg" />
+    <None Include="configs\min_max_queen_time_laying_of_larvae.cfg" />
+    <None Include="configs\min_max_time_drought.cfg" />
+    <None Include="configs\min_max_worker_ant_counts.cfg" />
+    <None Include="configs\min_max_worker_healths.cfg" />
+    <None Include="configs\min_max_worker_protects.cfg" />
+    <None Include="configs\queen_names.cfg" />
   </ItemGroup>
 </Project>

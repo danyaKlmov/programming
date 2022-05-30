@@ -1,98 +1,14 @@
-#include"colonium.h"
-#include"config_provider.h"
-#include"work_ant.h"
-#include"queen_mom.h"
-#include"queen_daughter.h"
+#include"all.h"
 
-colonium::colonium(const string& name, int fighter_count, int work_ant_count) {
-	this->name = name;
-	this->fighter_count = fighter_count;
-	this->work_ant_count = work_ant_count;
-	queen_ant = create_queen_mom();
-	ants.push_back(queen_ant);
-	for (int i = 0; i < work_ant_count; i++) {
-		ant* work_ant = create_work_ant();
-		ants.push_back(work_ant);
-	}
-	for (int i = 0; i < fighter_count; i++) {
-		ant* fighter = create_fighter();
-		ants.push_back(fighter);
-	}
-}
-
-colonium::colonium(const string& name, int fighter_count, int work_ant_count, ant* queen) {
-	this->name = name;
-	this->fighter_count = fighter_count;
-	this->work_ant_count = work_ant_count;
-	this->queen_ant = queen;
-	ants.push_back(queen_ant);
-	for (int i = 0; i < work_ant_count; i++) {
-		ant* work_ant = create_work_ant();
-		ants.push_back(work_ant);
-	}
-	for (int i = 0; i < fighter_count; i++) {
-		ant* fighter = create_fighter();
-		ants.push_back(fighter);
-	}
+colonium::colonium(const string& name)
+	:heap(name, 0, 0, 0, 0) {
+	colonium_queen_ant = nullptr;
 }
 
 colonium::~colonium() {
 	for (int i = 0; i < ants.size(); i++) {
 		delete ants[i];
 	}
-}
-ant* colonium::create_fighter() {
-	auto healths = config_provider::get_min_max_fighter_healths();
-	auto attacks = config_provider::get_min_max_fighter_attack();
-	auto protects = config_provider::get_min_max_fighter_protect();
-
-	int health = healths[0] + (rand() % (healths[1] - healths[0]));
-	int attack = attacks[0] + (rand() % (attacks[1] - attacks[0]));
-	int protect = protects[0] + (rand() % (protects[1] - protects[0]));
-	return new fighter(attack, health, protect);
-}
-ant* colonium::create_work_ant() {
-	auto healths = config_provider::get_min_max_worker_healths();
-	auto protects = config_provider::get_min_max_worker_protect();
-
-	int health = healths[0] + (rand() % (healths[1] - healths[0]));
-	int protect = protects[0] + (rand() % (protects[1] - protects[0]));
-	return new work_ant(health, protect);
-}
-ant* colonium::create_queen_mom() {
-	auto names = config_provider::get_queen_names();
-	auto healths = config_provider::get_min_max_queen_healths();
-	auto attacks = config_provider::get_min_max_queen_attack();
-	auto larvaes = config_provider::get_min_max_queen_larvae();
-	auto time_laying_of_larvaes = config_provider::get_min_max_queen_time_laying_of_larvae();
-	auto protects = config_provider::get_min_max_queen_protect();
-
-	string name = names[rand() % names.size()];
-
-	int health = healths[0] + (rand() % (healths[1] - healths[0]));
-	int attack = attacks[0] + (rand() % (attacks[1] - attacks[0]));
-	int larvae = larvaes[0] + (rand() % (larvaes[1] - larvaes[0]));
-	int time_laying_of_larvae = time_laying_of_larvaes[0] + (rand() % (time_laying_of_larvaes[1] - time_laying_of_larvaes[0]));
-	int protect = protects[0] + (rand() % (protects[1] - protects[0]));
-	return new queen_mom(name, health, attack, protect, time_laying_of_larvae, larvae);
-}
-
-ant* colonium::create_queen_daughter() {
-	auto names = config_provider::get_queen_names();
-	auto healths = config_provider::get_min_max_queen_healths();
-	auto attacks = config_provider::get_min_max_queen_attack();
-	auto larvaes = config_provider::get_min_max_queen_larvae();
-	auto time_laying_of_larvaes = config_provider::get_min_max_queen_time_laying_of_larvae();
-	auto protects = config_provider::get_min_max_queen_protect();
-
-	string name = names[rand() % names.size()];
-
-	int health = healths[0] + (rand() % (healths[1] - healths[0]));
-	int attack = attacks[0] + (rand() % (attacks[1] - attacks[0]));
-	int larvae = larvaes[0] + (rand() % (larvaes[1] - larvaes[0]));
-	int time_laying_of_larvae = time_laying_of_larvaes[0] + (rand() % (time_laying_of_larvaes[1] - time_laying_of_larvaes[0]));
-	int protect = protects[0] + (rand() % (protects[1] - protects[0]));
-	return new queen_daughter(name, health, attack, protect, time_laying_of_larvae, larvae);
 }
 
 void colonium::turn(world* w) {
@@ -127,24 +43,81 @@ void  colonium::remove_ant(ant* a) {
 			break;
 		}
 	}
+	for (int e = 0; e < fighters.size(); e++) {
+		if (fighters[e] == a) {
+			fighters.erase(fighters.begin() + e);
+			break;
+		}
+	}
+	for (int e = 0; e < workers.size(); e++) {
+		if (workers[e] == a) {
+			workers.erase(workers.begin() + e);
+			break;
+		}
+	}
+	for (int e = 0; e < specials.size(); e++) {
+		if (specials[e] == a) {
+			specials.erase(specials.begin() + e);
+			break;
+		}
+	}
 }
 
 void colonium::print_colonuim_info() {
-	cout << "Colonium: " << name << "\n";
+	cout << "Колония: " << name << "\n";
 	cout << "---------------------------------------------------------------------\n";
-	cout << "Queen:\n";
-	queen_ant->print_info();
-	cout << "Ants:\n";
-	for (int f = 0; f < ants.size(); f++) {
-		ants[f]->print_info();
+	cout << "Королева:\n";
+	colonium_queen_ant->print_info();
+	cout << "Рабочих: " << get_workers_count() << "\n";
+	cout << "Бойцов: " << get_fighters_count() << "\n";
+	cout << "Специальных: " << get_specials_count() << "\n";
+	string command;
+	while (command != "0") {
+		cout << "1. Вывести информацию о рабочих\n";
+		cout << "2. Вывести информацию о бойцах\n";
+		cout << "3. Вывести информацию о специальных\n";
+		cout << "0. Завершить просмотр\n";
+		cout << "Введите номер пункта\n";
+		getline(cin, command);
+		if (command == "1") {
+			for (int f = 0; f < workers.size(); f++) {
+				workers[f]->print_info();
+			}
+		}
+		else if (command == "2") {
+			for (int f = 0; f < fighters.size(); f++) {
+				fighters[f]->print_info();
+			}
+		}
+		else if (command == "3") {
+			for (int f = 0; f < specials.size(); f++) {
+				specials[f]->print_info();
+			}
+		}
+		else if (command != "0") {
+			cout << "Ошибка(неверный номер пункта)\n";
+		}
 	}
 	cout << "---------------------------------------------------------------------\n\n";
 }
 
 void colonium::add_ant(ant* a) {
 	ants.push_back(a);
+	a->set_colonium(this);
+	a->set_queen(get_queen());
+	switch (a->type()) {
+	case ant_type::worker:
+		workers.push_back(a);
+		break;
+	case ant_type::fighter:
+		fighters.push_back(a);
+		break;
+	case ant_type::special:
+		specials.push_back(a);
+		break;
+	}
 }
 
-string colonium::get_name() {
-	return name;
+void colonium::set_queen(queen_ant* queen) {
+	colonium_queen_ant = queen;
 }

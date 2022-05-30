@@ -1,26 +1,42 @@
+#ifndef ANT_H
+#define ANT_H
+
 #include<iostream>
 
 using namespace std;
 
+class queen_ant;
 class world;
 class colonium;
 class heap;
+enum class ant_type
+{
+	worker, fighter, special, queen
+};
 class ant {
 protected:
-	ant* queen;
+	queen_ant* queen;
 	colonium* _colonium;
 	int health, protect;
 	heap* current_heap;
 public:
-	void virtual print_type() = 0;
-	bool virtual take_damage(int damage, ant* enemy);
-	ant* get_queen() {
+	virtual ant_type type() = 0;
+	virtual bool is_invulnerable() {
+		return false;
+	}
+	void set_health(int new_health) {
+		health = new_health;
+	}
+	virtual bool can_be_attacked(ant* attacker);
+	virtual void print_type() = 0;
+	virtual bool take_damage(int damage, ant* enemy);
+	queen_ant* get_queen() {
 		return queen;
 	}
 	colonium* get_colonium() {
 		return _colonium;
 	}
-	void set_queen(ant* queen) {
+	void set_queen(queen_ant* queen) {
 		this->queen = queen;
 	}
 	void set_colonium(colonium* colonium) {
@@ -39,9 +55,11 @@ public:
 	int get_protect() {
 		return protect;
 	}
-	void virtual turn(world* w);
-	void virtual action(world* w) = 0;
-	void virtual end_turn(world* w);
-	void virtual print_info() = 0;
+	virtual void turn(world* w);
+	virtual void action(world* w) = 0;
+	virtual void end_turn(world* w);
+	virtual void print_info() = 0;
 	virtual ~ant() {}
 };
+
+#endif

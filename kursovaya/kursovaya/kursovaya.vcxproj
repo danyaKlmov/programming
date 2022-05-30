@@ -140,31 +140,84 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ant.cpp" />
-    <ClCompile Include="attack ant.h" />
     <ClCompile Include="colonium.cpp" />
-    <ClCompile Include="config_provider.cpp" />
+    <ClCompile Include="cricket.cpp" />
+    <ClCompile Include="exp_orange_work_ant.cpp" />
+    <ClCompile Include="exp_red_work_ant.cpp" />
     <ClCompile Include="fighter.cpp" />
+    <ClCompile Include="heap.cpp" />
+    <ClCompile Include="legendary_fighter.cpp" />
+    <ClCompile Include="legendary_work_ant.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="older_accurate_fighter.cpp" />
+    <ClCompile Include="older_fighter.cpp" />
+    <ClCompile Include="older_work_ant.cpp" />
+    <ClCompile Include="orange_queen_daughter.cpp" />
+    <ClCompile Include="orange_queen_mom.cpp" />
     <ClCompile Include="queem_mom.cpp" />
     <ClCompile Include="queen_ant.cpp" />
     <ClCompile Include="queen_ant.h" />
     <ClCompile Include="queen_daughter.cpp" />
+    <ClCompile Include="red_queen_daughter.cpp" />
+    <ClCompile Include="red_queen_mom.cpp" />
+    <ClCompile Include="scarab.cpp" />
+    <ClCompile Include="simple_fighter.cpp" />
+    <ClCompile Include="simple_hunter_fighter.cpp" />
+    <ClCompile Include="simple_stocky_work_ant.cpp" />
+    <ClCompile Include="simple_talant_work_ant.cpp" />
     <ClCompile Include="work_ant.cpp" />
     <ClCompile Include="work_ant.h" />
     <ClCompile Include="ant.h" />
     <ClCompile Include="world.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="attack.h" />
+    <ClInclude Include="all.h" />
     <ClInclude Include="colonium.h" />
-    <ClInclude Include="config_provider.h" />
+    <ClInclude Include="cricket.h" />
+    <ClInclude Include="exp_orange_work_ant.h" />
+    <ClInclude Include="exp_red_work_ant.h" />
     <ClInclude Include="fighter.h" />
-    <ClInclude Include="health.h" />
     <ClInclude Include="heap.h" />
+    <ClInclude Include="legendary_fighter.h" />
+    <ClInclude Include="legendary_work_ant.h" />
+    <ClInclude Include="older_accurate_fighter.h" />
+    <ClInclude Include="older_fighter.h" />
+    <ClInclude Include="older_work_ant.h" />
+    <ClInclude Include="orange_queen_daughter.h" />
+    <ClInclude Include="orange_queen_mom.h" />
     <ClInclude Include="queen_daughter.h" />
     <ClInclude Include="queen_mom.h" />
+    <ClInclude Include="red_queen_daughter.h" />
+    <ClInclude Include="red_queen_mom.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="scarab.h" />
+    <ClInclude Include="simple_fighter.h" />
+    <ClInclude Include="simple_hunter_fighter.h" />
+    <ClInclude Include="simple_stocky_work_ant.h" />
+    <ClInclude Include="simple_talant_work_ant.h" />
     <ClInclude Include="world.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="simulation.log" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="configs\coloniums_names.cfg" />
+    <None Include="configs\min_max_colonium.cfg" />
+    <None Include="configs\min_max_fighter_ant_counts.cfg" />
+    <None Include="configs\min_max_fighter_attack.cfg" />
+    <None Include="configs\min_max_fighter_healths.cfg" />
+    <None Include="configs\min_max_fighter_protects.cfg" />
+    <None Include="configs\min_max_heaps.cfg" />
+    <None Include="configs\min_max_queen_attack.cfg" />
+    <None Include="configs\min_max_queen_healths.cfg" />
+    <None Include="configs\min_max_queen_larvae.cfg" />
+    <None Include="configs\min_max_queen_protects.cfg" />
+    <None Include="configs\min_max_queen_time_laying_of_larvae.cfg" />
+    <None Include="configs\min_max_time_drought.cfg" />
+    <None Include="configs\min_max_worker_ant_counts.cfg" />
+    <None Include="configs\min_max_worker_healths.cfg" />
+    <None Include="configs\min_max_worker_protects.cfg" />
+    <None Include="configs\queen_names.cfg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

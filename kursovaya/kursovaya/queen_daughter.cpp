@@ -1,10 +1,4 @@
-#include"queen_daughter.h"
-#include"world.h"
-
-void queen_daughter::print_info() {
-	cout << "\tQueen daughter\n";
-	queen_ant::print_info();
-}
+#include"all.h"
 
 void queen_daughter::turn(world* w) {
 	if (!exile) {
@@ -17,26 +11,30 @@ void queen_daughter::turn(world* w) {
 
 void queen_daughter::exile_daughter(world* w) {
 	exile = true;
-	cout << "Queen daughter " << name << " leaves colonium!\n";
-	colonium* col = w->create_colonium(this);
+	cout << "Королева дочь " << name << " покидает колонию\n";
+	colonium* col = create_own_colonium();
+	get_colonium()->remove_ant(this);
 	w->add_colonium(col);
-	cout << "Queen daughter " << name << " create her own colonium " << col->get_name() << "\n";
-}
+	cout << "Королева дочь " << name << " создает свою собственную колонию " << col->get_name() << "\n";
+	set_colonium(col);
 
-void queen_daughter::laying_of_larvae() {
-	if (larvae_count == 0) {
-		return;
-	}
-	int type = rand() % 2;
-	if (type == 0) {
-		larvae = get_colonium()->create_work_ant();
-	}
-	if (type == 1) {
-		larvae = get_colonium()->create_fighter();
-	}
-	larvae_count--; 
 }
 
 void queen_daughter::print_type() {
-	cout << "queen_daughter";
+	cout << "Королева дочь";
+}
+
+void queen_daughter::print_info() {
+	queen_ant::print_info();
+	cout << "\tДочь королевы " << mother->get_name() << "\n\n";
+}
+
+colonium* queen_daughter::create_own_colonium() {
+	colonium* col = new colonium(get_colonium()->get_name() + " от " + get_name());
+	col->set_queen(this);
+	return col;
+}
+
+bool queen_daughter::check_parentness(queen_ant* q) {
+	return q == mother;
 }
