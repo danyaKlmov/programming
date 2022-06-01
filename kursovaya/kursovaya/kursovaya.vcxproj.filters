@@ -186,23 +186,4 @@
   <ItemGroup>
     <Text Include="simulation.log" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="configs\coloniums_names.cfg" />
-    <None Include="configs\min_max_colonium.cfg" />
-    <None Include="configs\min_max_fighter_ant_counts.cfg" />
-    <None Include="configs\min_max_fighter_attack.cfg" />
-    <None Include="configs\min_max_fighter_healths.cfg" />
-    <None Include="configs\min_max_fighter_protects.cfg" />
-    <None Include="configs\min_max_heaps.cfg" />
-    <None Include="configs\min_max_queen_attack.cfg" />
-    <None Include="configs\min_max_queen_healths.cfg" />
-    <None Include="configs\min_max_queen_larvae.cfg" />
-    <None Include="configs\min_max_queen_protects.cfg" />
-    <None Include="configs\min_max_queen_time_laying_of_larvae.cfg" />
-    <None Include="configs\min_max_time_drought.cfg" />
-    <None Include="configs\min_max_worker_ant_counts.cfg" />
-    <None Include="configs\min_max_worker_healths.cfg" />
-    <None Include="configs\min_max_worker_protects.cfg" />
-    <None Include="configs\queen_names.cfg" />
-  </ItemGroup>
 </Project>
